@@ -66,7 +66,7 @@ public class RouterMediaWiki implements IRouterSearchable {
 		for (String host : hostsChecks) {
 			try {
 				URI uri = new URI("http://" + host + "/api.php?action=parse&prop=wikitext%7clanglinks%7ccategories%7clinks%7cdisplaytitle%7ciwlinks%7cproperties"
-						+ "&format=json&page=" + TabletUtil.encode(path.getPath().substring(1)));
+						+ "&format=json&page=" + TabletUtil.encode(path.getPath().replaceAll("\\/w.*\\/","/").substring(1)));
 
 				HttpClient client = TabletUtil.createHttpClient();
 				HttpGet request = new HttpGet(uri);
