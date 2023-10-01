@@ -177,14 +177,14 @@ public class CharsetTablet {
 				TabletAPI.INSTANCE.registerRouter(new RouterDokuWiki("techreborn", "TechReborn Wiki", "wiki.techreborn.ovh/doku.php"));
 				TabletAPI.INSTANCE.addBook("TechReborn Wiki", "wiki://techreborn/");
 			}
-			if (ModCharset.INDEV || Loader.isModLoaded("forestry")) {
+			/*if (ModCharset.INDEV || Loader.isModLoaded("forestry")) {
 				TabletAPI.INSTANCE.registerRouter(new RouterDokuWiki("forestry", "Forestry Wiki", "forestryforminecraft.info/doku.php"));
 				TabletAPI.INSTANCE.addBook("Forestry Wiki", "wiki://forestry/");
 			}
 			if (ModCharset.INDEV || Loader.isModLoaded("railcraft")) {
 				TabletAPI.INSTANCE.registerRouter(new RouterDokuWiki("railcraft", "Railcraft Wiki", "railcraft.info/wiki/doku.php"));
 				TabletAPI.INSTANCE.addBook("Railcraft Wiki", "wiki://railcraft/");
-			}
+			}*/
 			if (ModCharset.INDEV) {
 				TabletAPI.INSTANCE.registerRouter(new RouterCoFH());
 				TabletAPI.INSTANCE.addBook("CoFH Docs", "wiki://cofh/docs/index");
