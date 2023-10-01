@@ -223,6 +223,14 @@ public class CharsetTablet {
 				TabletAPI.INSTANCE.registerRouter(new RouterGitHub("SleepyTrousers/EnderIO", "enderio"));
 				TabletAPI.INSTANCE.addBook("Ender IO Wiki", "wiki://enderio/_Sidebar");
 			}
+			if (ModCharset.INDEV || Loader.isModLoaded("inspirations")) {
+				TabletAPI.INSTANCE.registerRouter(new RouterGitHub("KnightMiner/Inspirations", "inspirations"));
+				TabletAPI.INSTANCE.addBook("Inspirations Wiki", "wiki://inspirations/Home");
+			}
+			if (ModCharset.INDEV || Loader.isModLoaded("buildinggadgets")) {
+				TabletAPI.INSTANCE.registerRouter(new RouterGitHub("Direwolf20-MC/BuildingGadgets", "buildinggadgets"));
+				TabletAPI.INSTANCE.addBook("Building Gadgets Wiki", "wiki://buildinggadgets/Home");
+			}
 /*			if (ModCharset.INDEV || Loader.isModLoaded("vampirism")) {
 				TabletAPI.INSTANCE.registerRouter(new RouterGitHub("TeamLapen/Vampirism", "vampirism"));
 				TabletAPI.INSTANCE.addBook("Vampirism Wiki", "wiki://vampirism/Home");
