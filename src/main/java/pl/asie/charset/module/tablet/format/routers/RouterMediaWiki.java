@@ -57,7 +57,7 @@ public class RouterMediaWiki implements IRouterSearchable {
 		if ("gamepedia".equals(name) && path.toString().endsWith("%20%28Vanilla%29")) {
 			try {
 				path = new URI(path.toString().replaceAll("%20%28Vanilla%29", ""));
-				hostsChecks = new String[]{"minecraft.gamepedia.com"};
+				hostsChecks = new String[]{"minecraft.wiki"};
 			} catch (Exception e) {
 				e.printStackTrace();
 			}

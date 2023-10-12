@@ -169,7 +169,8 @@ public class CharsetTablet {
 	@SideOnly(Side.CLIENT)
 	public void onPostInitClient(FMLPostInitializationEvent event) {
 		if (allowRemoteLookups) {
-			TabletAPI.INSTANCE.registerRouter(new RouterMediaWiki("gamepedia", "Gamepedia", "ftb.gamepedia.com", "minecraft.gamepedia.com"));
+			TabletAPI.INSTANCE.registerRouter(new RouterMediaWiki("gamepedia", "FTB Wiki", "ftb.fandom.com"));
+			TabletAPI.INSTANCE.registerRouter(new RouterMediaWiki("minecraft", "Minecraft Wiki", "minecraft.wiki"));
 			if (Loader.isModLoaded("mekanism")) {
 				TabletAPI.INSTANCE.registerRouter(new RouterMediaWiki("mekanism", "Mekanism Wiki", "wiki.aidancbrady.com/w"));
 			}
